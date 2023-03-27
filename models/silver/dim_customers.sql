@@ -6,4 +6,5 @@ select
     , store_id
     , name
     , email
+    , pk
 from {{ source('apjuice', 'users') }}  
