@@ -35,6 +35,9 @@ models:
   db_bootcamp:
     +file_format: delta
     +materialized: view
+    +persist_docs:
+      relation: true
+      columns: true
     
     gold:
       +tags: gold
